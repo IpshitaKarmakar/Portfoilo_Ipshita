@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfilo-Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: rgb(227, 45, 227);
+        color: white;
+        font-family: 'Poppins',sans-serif;
+    }
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: violet;
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+    }
+    nav ul li{
+        list-style: none;
+        margin: 0 23px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    nav ul li a:hover{
+        color: rgb(206, 18, 206);
+        font-size: 1.01rem;
+    }
+    .left{
+        font-size: 1.5rem;
+    }
+    main hr{
+        border: 0;
+        background-color: whitesmoke;
+        height: 1.2px;
+        margin: 40px 84px;
+    }
+    .firstsection{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 130px 0;
+    }
+    .firstsection>div{
+        width: 30%;
+    }
+    .rightsection{
+        width: 30%;
+    }
+    .rightsection img{
+        margin: 50px 0;
+    }
+    .leftsection{
+        width: 34px;
+        font-size: 2.0rem;
+        margin: 100px 0;
+    }
+    .leftsection >div{
+        width: 30%;
+        
+    }
+     .leftsection .btn{
+       padding: 20px;
+        background: violet;
+        color: white;
+        border: 2px solid white;
+        border-radius: 6px;
+        font-size: 10px;
+        cursor: pointer;
+
+    }
+    .purple{
+        color: blanchedalmond;
+
+    }
+    
+    #element{
+        color: blanchedalmond;
+    }
+    .secondsection{
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+    }
+    .secondsection h1{
+        text-align: center;
+        font-size: 1.9rem;
+    }
+    
+    .secondsection .box{
+        background: white;
+        width: 77vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+    }
+    .secondsection .vertical{
+        height: 93px;
+        width: 1px;
+        background-color: white;   
+        margin: 0 140px;
+    }
+    .image-top{
+        width: 35px;
+        position: relative;
+        top: -12px;
+        left: -9px;
+    }
+    
+    .vertical-desc{
+        position: relative;
+        top: 36px;
+        color: white;
+        width: 150px;
+        font-size: 15px;
+    }
+    .container{
+        height: 200px;
+        background-color: violet;
+        margin: 70px 420px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 80px;
+    }
+    
+    ul{
+        list-style: none;
+    }
+    .footer{
+        background-color: violet;
+        padding: 76px 0;  
+    }
+    .footer-col{
+        width: 25%;
+        padding: 0 15px;
+    }
+    .footer-col h4{
+        font-size: 30px;
+    }
+    .footer-col a{
+        text-decoration: none;
+        color: white;
+    }
+    .footer-col a:hover{
+        color: rgb(206, 18, 206);
+        font-size: 1.04rem;
+    }
+    .footer .footer-text-center{
+        text-align: center;
+
+    }
+     
+</style>
+<body>
+    <header>
+        <nav>
+        <div class="left"><h1>Ipshita's-Portfoilo</h1></div>
+        <div class="right">
+            <ul>
+                <li><a href="/">Home</li></a>
+                <li><a href="/">About</li></a>
+                <li><a href="/">Skills</li></a>
+                <li><a href="/">Projects</li></a>
+                <li><a href="/">Contact Me</li></a>
+            </ul>
+        </div>
+    </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="purple">Ipshita Karmakar</span>
+                <p> I am an uncoming Computer Science Engineer </p>
+                <p>Seeking for the internship opportunity and ready to learn new application</p>
+                <p>My Email id is <span class="purple">ipshita.cse.22@nitap.ac.in</span></p>
+                <p>I have experience on</p>
+                <span id="element"></span>
+              <!-- <div class="buttons">
+                    <button class="btn">download Resume</button>
+                </div>
+              --> 
+            </div>
+            <div class="rightsection">
+                <img src="pic-me.jpeg" alt="" height="500px" width="500px">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <h1>Present Experience in Technical Skills</h1>
+             <div class="box">
+               <div class="vertical">
+                <img class="image-top" src="html.jpeg" alt="">
+                <div class="vertical-desc">
+                    By the using of HTML. I made my own portfilo website.
+                </div>
+               </div>
+               <div class="vertical">
+                <img class="image-top" src="css.jpeg" alt="">
+                <div class="vertical-desc">
+                    By the application of CSS, I am able to style my own portfilo website.
+                </div>
+               </div>
+               <div class="vertical">
+                <img class="image-top" src="python.jpeg" alt="">
+                <div class="vertical-desc">
+                     Using Python Programming , I am sucessfully created a dice simulator. Another is Graphics designing of window's logo with simulations.
+                </div>
+               </div>
+               <div class="vertical">
+                <img class="image-top" src="coursera.png" alt="">
+                <div class="vertical-desc">
+                    Using Python Programming, I am successfully learned ablout the basics of Data analysis with python. Here I know about the real life problem solving using data sets in excel form.
+                </div>
+                   </div>
+               </div>
+             </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            
+            <div class="footer-col">
+                <h4>Get help</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Emails</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                    <li><a href="#">Problem solving</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Sections</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">About me</a></li>
+                    <li><a href="#">Skills </a></li>
+                    <li><a href="#">Projects</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Projects</h4>
+                <ul>
+                    <li><a href="#">Portfilo Website</a></li>
+                    <li><a href="#">Graphics Designing with python</a></li>
+                    <li><a href="#">Dice simulator with python</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="footer-text-center">
+            &#169; www.ipshitakarmakar's portfilo.com | All rights reversed
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['C Programming','HTML','CSS','Object Oriented Programming','Data structures','Python Programming','Data Analysis with python'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
